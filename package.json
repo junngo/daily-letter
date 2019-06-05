@@ -1,0 +1,10 @@
+{
+  "name": "dailyletter",
+  "version": "1.0.0",
+  "description": "Daily Letter project with Vanilla and NodeJS",
+  "main": "index.js",
+  "author": "Myeongjun Go",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
