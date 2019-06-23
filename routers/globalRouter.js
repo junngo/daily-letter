@@ -8,7 +8,8 @@ import { getJoin,
         postLogin,
         logout,
         githubLogin,
-        postGithubLogIn
+        postGithubLogIn,
+        getMe
     } from "../controllers/userController";
 import { onlyPublic, onlyPrivate } from "../middlewares";
 
@@ -31,5 +32,6 @@ globalRouter.get(
   postGithubLogIn
 );
 
+globalRouter.get(routes.me, getMe);
 
 export default globalRouter;
