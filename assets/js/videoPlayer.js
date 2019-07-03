@@ -7,6 +7,14 @@ const currentTime = document.getElementById("currentTime");
 const totalTime = document.getElementById("totalTime");
 const volumeRange = document.getElementById("jsVolume");
 
+// API
+const registerView = () => {
+    const videoId = window.location.href.split("/videos/")[1];
+    fetch(`/api/${videoId}/view`, {
+        method: "POST"
+    });
+};
+
 
 // Player Button
 function handlePlayClick() {
@@ -89,6 +97,7 @@ function getCurrentTime() {
 }
 
 function handleEnded() {
+    registerView();
     videoPlayer.currentTime = 0;
     playBtn.innerHTML = '<i class="fas fa-play"></i>';
 }
