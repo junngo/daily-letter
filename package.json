@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Myeongjun Go",
   "dependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/polyfill": "^7.4.4",
@@ -50,7 +51,6 @@
     "prestart": "npm run build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
     "eslint": "^5.16.0",
     "nodemon": "^1.19.1"
   }
